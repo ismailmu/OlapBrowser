@@ -1,0 +1,2 @@
+# OlapBrowser
+Olap SSAS Browser 
