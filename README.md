@@ -10,6 +10,7 @@ IIS
 SQL Server Analysis Services
 
 Lib :
+
 Olap4j.jar (http://www.olap4j.org/)
 
 Setting first :
