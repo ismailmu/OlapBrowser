@@ -1,7 +1,7 @@
 # OlapBrowser
 Olap SSAS Browser 
 
-Using Java
+Using Java and Google Chart (https://developers.google.com/chart/)
 
 Preq :
 
@@ -9,7 +9,8 @@ IIS
 
 SQL Server Analysis Services
 
-Olap4j.jar : http://www.olap4j.org/
+Lib :
+Olap4j.jar (http://www.olap4j.org/)
 
 Setting first :
 
