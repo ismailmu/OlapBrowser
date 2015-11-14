@@ -13,9 +13,7 @@ import org.olap4j.CellSetAxis;
 import org.olap4j.OlapConnection;
 import org.olap4j.OlapException;
 import org.olap4j.Position;
-import org.olap4j.metadata.Cube;
 import org.olap4j.metadata.Member;
-import org.olap4j.metadata.NamedList;
 
 import com.google.gson.Gson;
 
@@ -60,24 +58,24 @@ public class OlapUtility {
 		}
 	}
 
-	public String GetCubes() {
-		if (connection != null) {
-			List<String> cubeString=new ArrayList<String>();
-			try {
-				NamedList<Cube> cubes = connection.getOlapSchema().getCubes();
-				for (Cube cube : cubes) {
-					cubeString.add(cube.getName());
-				}
-			} catch (OlapException e) {
-				e.printStackTrace();
-			}catch (Exception e) {
-				e.printStackTrace();
-			}
-			return new Gson().toJson(cubeString);
-		} else {
-			return "";
-		}
-	}
+//	public String GetCubes() {
+//		if (connection != null) {
+//			List<String> cubeString=new ArrayList<String>();
+//			try {
+//				NamedList<Cube> cubes = connection.getOlapSchema().getCubes();
+//				for (Cube cube : cubes) {
+//					cubeString.add(cube.getName());
+//				}
+//			} catch (OlapException e) {
+//				e.printStackTrace();
+//			}catch (Exception e) {
+//				e.printStackTrace();
+//			}
+//			return new Gson().toJson(cubeString);
+//		} else {
+//			return "";
+//		}
+//	}
 	
 	public String getDataMdx(String mdx) {
 		

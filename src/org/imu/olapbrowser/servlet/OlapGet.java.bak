@@ -45,8 +45,7 @@ public class OlapGet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 		if (action == 0 ) { //get cube
-			//out.print(olapUtility.GetCubes());
-			//untuk saat ini tidak digunakan
+			out.print(olapUtility.GetCubes());
 		}
 		if (action == 1 ) { //get data from mdx
 			String mdx=request.getParameter("mdx");
